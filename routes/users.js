@@ -42,7 +42,7 @@ router.put("/user-data/:id", function (req, res) {
     .then((data) => {
       res.json({
         statusCode: 200,
-        user: data,
+        userUpdate: data,
         message: "update Employ Data Successfully",
       });
     })
@@ -60,7 +60,7 @@ router.get("/user-data/:id", function (req, res) {
     .then((data) => {
       res.json({
         statusCode: 200,
-        user: data,
+        findById: data,
         message: "find EmployData Successfully",
       });
     })
