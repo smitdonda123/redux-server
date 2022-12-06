@@ -47,7 +47,6 @@ router.put("/user-data/:id", function (req, res) {
       });
     })
     .catch((error) => {
-      console.log(error);
       res.json({
         message: error.message,
       });
@@ -65,7 +64,6 @@ router.get("/user-data/:id", function (req, res) {
       });
     })
     .catch((error) => {
-      console.log(error.message);
       res.json({
         message: error.message,
       });
