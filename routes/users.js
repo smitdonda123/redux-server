@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var UserData = require("../modals/User.js");
+var UserData = require("../Modals/User.js");
 
 // get employee data  --------1
 router.get("/user-data", function (req, res) {
