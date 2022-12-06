@@ -2,6 +2,12 @@ var express = require("express");
 var router = express.Router();
 var UserData = require("../Modals/User.js");
 
+router.get("/", function (req, res) {
+  res.json({
+    message: "working Server",
+  });
+});
+
 // get employee data  --------1
 router.get("/user-data", function (req, res) {
   UserData.find()
